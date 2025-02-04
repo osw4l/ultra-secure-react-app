@@ -38,7 +38,7 @@ export default function CredentialModal({
     try {
       await updateCredential(credentialDetail.id, {
         username: formData.username,
-        password: encryptData(formData.password),
+        password: encryptData(String(formData.password)),
         website: formData.website,
         notes: formData.notes,
       });
