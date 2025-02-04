@@ -47,4 +47,10 @@ After modifying the `.npmrc` file, you need to run `pnpm install` again to ensur
 
 ## License
 
+Create .env file and set:
+```bash
+VITE_BASE_API_URL=https://api.osw4l.com/ultra-secure
+```
+
 Licensed under the [MIT license](https://github.com/frontio-ai/vite-template/blob/main/LICENSE).
+

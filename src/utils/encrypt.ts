@@ -2,7 +2,7 @@ import CryptoJS from "crypto-js";
 
 const ENCRYPTION_KEY = "secure";
 
-export const encryptData = (data: File | string): string => {
+export const encryptData = (data: string): string => {
   if (!data) return "";
 
   return CryptoJS.AES.encrypt(data, ENCRYPTION_KEY).toString();
